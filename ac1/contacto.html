@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Cabecera -->
-     <header>
+     <header id="inicio">
         <h1>Ruedas Gabo</h1>
         <p>Reparación y mantenimiento de bicicletas</p>
         <nav>
@@ -24,7 +24,50 @@
         </nav>
         </header>
  <body>
+    <form action="# " method="post">
+        <fieldset>
+            <legend>Formulario de Contacto</legend>
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ana Martínez" required><br><br>
 
-    <p><a href="#inicio">Volver al inicio</a></p>
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" placeholder="ana@prueba.com" required><br><br>
+
+        <label for="telefono">Teléfono *</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" title="Ingrese un número de teléfono válido de 8 dígitos" placeholder="12345678" required><br><br>
+
+        <input type="checkbox" id="suscribirse" name="suscribirse">
+        <label for="suscribirse">Deseo suscribirme al boletín de noticias</label><br><br>
+
+            <fieldset>
+                <legend>Seleccione su motivo de contacto:</legend>
+                <input type="radio" id="consulta" name="motivo" value="consulta" required>
+                <label for="consulta">Consulta</label><br>
+
+                <input type="radio" id="reclamo" name="motivo" value="reclamo">
+                <label for="reclamo">Reclamo</label><br>
+
+                <input type="radio" id="sugerencia" name="motivo" value="sugerencia">
+                <label for="sugerencia">Sugerencia</label><br>
+
+                <label for="mensaje">Mensaje *</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escriba su mensaje aquí..." required minlength="4" maxlength="400"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+
+            </fieldset
+
+        <p><a href="#inicio">Volver al inicio</a></p>
+        <!-- Pie de página -->
+        <footer>
+            <address>
+                <p>Dirección: Castillo Patrio, San Jose Costa Rica</p>
+                <p>Teléfono: 88888888</p>
+                <p>Email: <a href="mailto:info@ruedasgabo.com">info@ruedasgabo.com</a></p>
+            </address>
+            <p>Sitio externo: <a href="https://www.ruedasgabo.com" target="_blank" rel="noopener">www.ruedasgabo.com</a></p>
+
+            <p><small>&copy; 2024 Ruedas Gabo. Todos los derechos reservados.</small></p>
+        </footer>
  </body>
  </html>
