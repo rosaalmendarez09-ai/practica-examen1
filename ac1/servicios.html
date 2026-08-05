@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Cabecera -->
-     <header>
+     <header id="inicio">
         <h1>Ruedas Gabo</h1>
         <p>Reparación y mantenimiento de bicicletas</p>
         <nav>
@@ -23,7 +23,76 @@
             </ul>
         </nav>
     </header>
+    
     <body>
-        <!--lista de servicios de reparacion y precios-->
+        <!-- Lista sin orden -->
+         <p>En <abbr title="Ruedas Gabo">RG</abbr> ofrecemos una amplia gama de servicios para mantener su bicicleta en perfecto estado:</p>
+        <ul>
+            <li>Reparación de cuadros</li>
+            <li>Mantenimiento de engranajes</li>
+            <li>Cambio de neumáticos</li>
+            <li>Instalación de accesorios</li>
+        </ul>
+
+        <!-- Lista descriptiva -->
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos una amplia gama de servicios para mantener su bicicleta en perfecto estado:</p>
+        <dl>
+            <dt><strong>Reparación de cuadros</strong></dt>
+            <dd>Reparamos todo tipo de cuadros, desde bicicletas de montaña hasta bicicletas de carretera.</dd>
+
+            <dt><strong>Mantenimiento de engranajes</strong></dt>
+            <dd>Realizamos mantenimiento completo de los engranajes para asegurar un cambio suave y eficiente.</dd>
+
+            <dt><strong>Cambio de neumáticos</strong></dt>
+            <dd>Cambiamos neumáticos desgastados por nuevos para garantizar la seguridad y el rendimiento.</dd>
+        </dl>
+
+
+        <table>
+            <caption><strong>Tabla de Precios</strong></caption>
+            <thead>
+                <tr>
+                    <th> scope="col">Servicio</th>
+                    <th> scope="col">Precio</th>
+                    <th> scope="col">Duración</th>
+                    <th> scope="col">Garantía</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="5">Reparación de cuadros</td>
+                    <th scope="row">$50</th>
+                </tr>
+                <tr>
+                    <td rowspan="5">Mantenimiento de engranajes</td>
+                    <th scope="row">$30</th>
+                </tr>
+                <tr>
+                    <th rowspan="row">$200</th>
+                    <td scope="row">6 meses</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Cambio de neumáticos</td>
+                    <th scope="row">$40</th>
+                </tr>
+                <tr>
+                    <th rowspan="row">$100</th>
+                    <td scope="row">3 meses</td>
+                </tr>
+            </tbody>
+             
+                <tfoot>
+                <tr>
+                    <td colspan="4"><em><strong>Nota:</strong></em> los precios pueden variar según el modelo de la bicicleta.</td>
+                </tr>
+                </tfoot>
+            
+        </table>
+
+        <p><a href="#inicio">Volver al inicio</a></p>
+
     </body>
 </html>
+                
