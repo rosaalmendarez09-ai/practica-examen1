@@ -167,12 +167,11 @@ table {
     width: 60%;
     border-collapse: collapse;
     border-color: #2c3e50;
-    padding: 5rem;
+    padding: 1rem;
 }
 
 tbody tr :nth-child(even) {
-  
-    border-color: 1rem solid #fff;
+    background-color: #8da1b6;
     display: grid;
 }
 
