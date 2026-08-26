@@ -4,11 +4,45 @@
     --acento: #c28835;
     --texto: #2c2c2c;
     --linea: #d8d3c8;
-    --esp-sm: 1.6rem;
+   
     --radio: 0.6rem;
     --esp-md: 2.4rem;
     --esp-lg: 4rem;
+    --esp-xs: 1.6rem;
     --sombra: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.3);
 }
 
 /*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'titilium', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--texto);
+    background-color: var(--fondo);
+}
+
+h1, h2, h3 {
+    font-size: 'titilium', serif;
+    line-height: 1.2;
+    color: var(--texto)
+}
+
+h1{ font-size: 4rem; } 
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+
+p { margin-bottom: 1.6rem; }
+a { color: var(--acento); text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; } 
+
+/* encabezado */
