@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tu nombre">
+  <title>El Rincón de las Letras | Catálogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="encabezado" class="encabezado">
+    <a href="index.html" class="logo">El Rincón <span>de las Letras</span></a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="activo" href="catalogo.html">Catálogo</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#formulario">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="#formulario" class="boton boton-pequeno">Escríbenos</a>
+  </header>
+
+  <main>
+
+    <section class="pagina-titulo">
+      <p class="etiqueta">CATÁLOGO</p>
+      <h1>Encuentra tu próxima lectura</h1>
+      <p>Esta página incluye tabla, formulario, Grid, Flexbox y elementos para practicar estados y transformaciones.</p>
+    </section>
+
+    <section class="seccion">
+      <div class="layout-catalogo">
+        <aside class="filtros">
+          <h2>Filtrar</h2>
+          <form class="formulario">
+            <fieldset>
+              <legend>Categoría</legend>
+              <label><input type="checkbox" name="categoria" value="fantasia"> Fantasía</label>
+              <label><input type="checkbox" name="categoria" value="misterio"> Misterio</label>
+              <label><input type="checkbox" name="categoria" value="aventura"> Aventura</label>
+              <label><input type="checkbox" name="categoria" value="clasico"> Clásicos</label>
+            </fieldset>
+            <fieldset>
+              <legend>Formato</legend>
+              <label><input type="radio" name="formato"> Físico</label>
+              <label><input type="radio" name="formato"> Digital</label>
+            </fieldset>
+            <button type="button" class="boton">Aplicar filtros</button>
+          </form>
+        </aside>
+
+        <div class="catalogo-lista">
+          <div class="barra-catalogo">
+            <p>Mostrando <strong>4 libros</strong></p>
+            <select aria-label="Ordenar catálogo">
+              <option>Ordenar por popularidad</option>
+              <option>Precio menor a mayor</option>
+              <option>Precio mayor a menor</option>
+            </select>
+          </div>
+
+          <div class="grid-libros">
+            <article id="libro-1" class="tarjeta">
+              <div class="portada portada-roja"><span>01</span></div>
+              <div class="tarjeta-contenido"><p class="categoria">Fantasía</p><h3>El bosque de las historias</h3><p>Una aventura fantástica.</p><div class="meta"><span>320 páginas</span><strong>₡12.500</strong></div><button class="boton">Añadir</button></div>
+            </article>
+            <article id="libro-2" class="tarjeta">
+              <div class="portada portada-azul"><span>02</span></div>
+              <div class="tarjeta-contenido"><p class="categoria">Misterio</p><h3>La última página</h3><p>Un secreto entre libros.</p><div class="meta"><span>240 páginas</span><strong>₡9.750</strong></div><button class="boton">Añadir</button></div>
+            </article>
+            <article id="libro-3" class="tarjeta">
+              <div class="portada portada-verde"><span>03</span></div>
+              <div class="tarjeta-contenido"><p class="categoria">Aventura</p><h3>Viaje al horizonte</h3><p>Una gran expedición.</p><div class="meta"><span>280 páginas</span><strong>₡10.900</strong></div><button class="boton">Añadir</button></div>
+            </article>
+            <article id="libro-4" class="tarjeta">
+              <div class="portada portada-morada"><span>04</span></div>
+              <div class="tarjeta-contenido"><p class="categoria">Clásico</p><h3>Cartas de invierno</h3><p>Recuerdos de otra época.</p><div class="meta"><span>190 páginas</span><strong>₡8.500</strong></div><button class="boton">Añadir</button></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="precios" class="seccion">
+      <div class="encabezado-seccion">
+        <p class="etiqueta">INFORMACIÓN</p>
+        <h2>Tabla de disponibilidad</h2>
+      </div>
+
+      <div class="tabla-contenedor">
+        <table class="tabla-precios">
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Categoría</th>
+              <th>Formato</th>
+              <th>Precio</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>El bosque de las historias</td><td>Fantasía</td><td>Físico</td><td>₡12.500</td><td>Disponible</td></tr>
+            <tr><td>La última página</td><td>Misterio</td><td>Digital</td><td>₡9.750</td><td>Disponible</td></tr>
+            <tr><td>Viaje al horizonte</td><td>Aventura</td><td>Físico</td><td>₡10.900</td><td>Últimas unidades</td></tr>
+            <tr><td>Cartas de invierno</td><td>Clásico</td><td>Físico</td><td>₡8.500</td><td>Agotado</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="formulario" class="seccion contacto">
+      <div class="contacto-info">
+        <p class="etiqueta">CONTACTO</p>
+        <h2>¿Buscas un libro?</h2>
+        <p>Completa el formulario. Aquí puedes practicar <code>:focus</code>, validación visual y herencia de fuente.</p>
+      </div>
+
+      <form class="formulario formulario-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" type="text" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" type="email" placeholder="nombre@email.com" required>
+        </div>
+        <div class="campo">
+          <label for="asunto">Tema</label>
+          <select id="asunto" required>
+            <option value="">Selecciona una opción</option>
+            <option>Disponibilidad</option>
+            <option>Recomendación</option>
+            <option>Evento</option>
+          </select>
+        </div>
+        <div class="campo campo-completo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="6" placeholder="Escribe tu consulta" required></textarea>
+        </div>
+        <label class="aceptar"><input type="checkbox" required> Acepto ser contactado.</label>
+        <button type="submit" class="boton boton-principal">Enviar consulta</button>
+      </form>
+    </section>
+
+    <div class="boton-flotante">
+      <a href="#encabezado" aria-label="Volver arriba">↑</a>
+    </div>
+
+  </main>
+
+  <footer id="pie" class="pie">
+    <p>© 2026 El Rincón de las Letras</p>
+    <div class="redes"><a href="index.html">Inicio</a><a href="#formulario">Contacto</a></div>
+  </footer>
+
+</body>
+</html>

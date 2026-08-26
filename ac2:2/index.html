@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tu nombre">
+  <title>El Rincón de las Letras | Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="encabezado" class="encabezado">
+    <a href="index.html" class="logo">El Rincón <span>de las Letras</span></a>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <ul>
+        <li><a class="activo" href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#boletin">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="catalogo.html#formulario" class="boton boton-pequeno">Consultar</a>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="hero-contenido">
+        <p class="etiqueta">LIBRERÍA INDEPENDIENTE</p>
+        <h1>Historias que encuentran a sus lectores</h1>
+        <p class="descripcion">Descubre novelas, clásicos y aventuras seleccionadas para perderte entre páginas.</p>
+        <div class="grupo-botones">
+          <a href="catalogo.html" class="boton boton-principal">Explorar catálogo</a>
+          <a href="#destacados" class="boton boton-secundario">Ver destacados</a>
+        </div>
+      </div>
+      <div class="hero-decoracion">
+        <span class="circulo circulo-uno"></span>
+        <span class="circulo circulo-dos"></span>
+        <span class="libro-flotante">📖</span>
+      </div>
+    </section>
+
+    <section id="destacados" class="seccion">
+      <div class="encabezado-seccion">
+        <p class="etiqueta">SELECCIÓN DEL MES</p>
+        <h2>Libros destacados</h2>
+        <p>Practica CSS Grid creando una cuadrícula adaptable con estas tarjetas.</p>
+      </div>
+
+      <div class="grid-libros">
+        <article class="tarjeta tarjeta-destacada">
+          <div class="portada portada-roja"><span>01</span></div>
+          <div class="tarjeta-contenido">
+            <p class="categoria">Fantasía</p>
+            <h3>El bosque de las historias</h3>
+            <p>Un viaje por un reino donde cada libro abre una puerta diferente.</p>
+            <div class="meta"><span>320 páginas</span><strong>₡12.500</strong></div>
+            <a href="catalogo.html#libro-1" class="enlace">Ver detalle →</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="portada portada-azul"><span>02</span></div>
+          <div class="tarjeta-contenido">
+            <p class="categoria">Misterio</p>
+            <h3>La última página</h3>
+            <p>Un antiguo manuscrito guarda la pista de un secreto olvidado.</p>
+            <div class="meta"><span>240 páginas</span><strong>₡9.750</strong></div>
+            <a href="catalogo.html#libro-2" class="enlace">Ver detalle →</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="portada portada-verde"><span>03</span></div>
+          <div class="tarjeta-contenido">
+            <p class="categoria">Aventura</p>
+            <h3>Viaje al horizonte</h3>
+            <p>Una expedición que cambiará para siempre el destino de sus protagonistas.</p>
+            <div class="meta"><span>280 páginas</span><strong>₡10.900</strong></div>
+            <a href="catalogo.html#libro-3" class="enlace">Ver detalle →</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="portada portada-morada"><span>04</span></div>
+          <div class="tarjeta-contenido">
+            <p class="categoria">Clásico</p>
+            <h3>Cartas de invierno</h3>
+            <p>Cartas, recuerdos y secretos que atraviesan varias generaciones.</p>
+            <div class="meta"><span>190 páginas</span><strong>₡8.500</strong></div>
+            <a href="catalogo.html#libro-4" class="enlace">Ver detalle →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="eventos" class="seccion seccion-oscura">
+      <div class="encabezado-seccion">
+        <p class="etiqueta">COMUNIDAD</p>
+        <h2>Próximos eventos</h2>
+      </div>
+
+      <div class="eventos-flex">
+        <article class="evento">
+          <div class="fecha"><span>24</span><small>AGO</small></div>
+          <div><h3>Club de lectura</h3><p>Conversamos sobre la novela del mes.</p></div>
+          <a href="#" class="enlace">Reservar</a>
+        </article>
+        <article class="evento">
+          <div class="fecha"><span>31</span><small>AGO</small></div>
+          <div><h3>Encuentro con autores</h3><p>Una tarde para conocer nuevas voces.</p></div>
+          <a href="#" class="enlace">Reservar</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="boletin" class="seccion boletin">
+      <div class="boletin-texto">
+        <p class="etiqueta">NOVEDADES</p>
+        <h2>Recibe recomendaciones</h2>
+        <p>Un correo ocasional con novedades y eventos.</p>
+      </div>
+      <form class="formulario formulario-horizontal">
+        <label class="sr-only" for="email-inicio">Correo electrónico</label>
+        <input id="email-inicio" type="email" placeholder="tu@email.com" required>
+        <button type="submit" class="boton boton-principal">Suscribirme</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="pie" class="pie">
+    <p>© 2026 El Rincón de las Letras</p>
+    <div class="redes">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#inicio">↑ Arriba</a>
+    </div>
+  </footer>
+
+</body>
+</html>
