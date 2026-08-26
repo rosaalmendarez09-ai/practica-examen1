@@ -23,26 +23,104 @@ html {
     font-size: 62.5%;
 }
 
+/* Fuentes, familia tipografica */
+
 body {
     font-size: 1.6rem;
     font-family: 'titilium', Arial, sans-serif;
     line-height: 1.6;
     color: var(--texto);
     background-color: var(--fondo);
+    text-align: center;
+    padding: 2rem;
 }
 
 h1, h2, h3 {
-    font-size: 'titilium', serif;
+    font-family: 'titilium', serif;
     line-height: 1.2;
-    color: var(--texto)
+    color: var(--texto);
 }
 
-h1{ font-size: 4rem; } 
+h1{ font-size: 4rem;  } 
 h2 { font-size: 3rem; }
 h3 { font-size: 2rem; }
 
 p { margin-bottom: 1.6rem; }
-a { color: var(--acento); text-decoration: none; }
+a { color: var(--acento); text-decoration: none;}
 img { max-width: 100%; height: auto; display: block; } 
 
-/* encabezado */
+
+/* ENCABEZADO */
+.encabezado {
+  display: grid;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--principal);
+}
+
+.logo {
+   font-size: 3rem;
+   text-align: left;
+}
+
+.hero {
+    padding: 3rem;
+    background-color: ;
+
+}
+
+
+/* CONTENIDO */
+
+
+
+
+/* TABLA */
+
+
+
+/* FORMULARIO */
+
+header #encabezado 
+.logo
+.navegacion
+.boton .boton-pequeno
+
+
+#inicio 
+
+#destacados .seccion
+#encabezado-seccion 
+.grid-libros
+.tarjeta 
+.tarjeta-destacada
+.portada .portada-verde
+.portada-roja
+.portada-morada
+.tarjeta-contenido
+.categoria
+.meta
+.enlace
+
+#eventos
+.seccion
+.seccion-oscura
+.encabezado-seccion
+.eventos-flex
+#boletin
+.boletin
+#pie
+.pie
+.eventos-flex
+.etiqueta
+.evento
+.fecha
+.boletin-texto
+.formulario
+.formulario-horizontal
+.sr-only
+#email-inicio
+.redes
+.boton-principal
