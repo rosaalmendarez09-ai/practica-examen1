@@ -1,0 +1,14 @@
+:root {
+    --principal: #1b3b36 ;
+    --fondo: #f4f1ea;
+    --acento: #c28835;
+    --texto: #2c2c2c;
+    --linea: #d8d3c8;
+    --esp-sm: 1.6rem;
+    --radio: 0.6rem;
+    --esp-md: 2.4rem;
+    --esp-lg: 4rem;
+    --sombra: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+/*Reset*/
